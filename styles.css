@@ -1,1 +1,31 @@
 /*  your css code here. If applicable */
+table {
+  /* Allows cells to maintain individual borders and border-radius */
+  border-collapse: separate; 
+  border-spacing: 4px; /* Adjust spacing between cells to match image */
+  font-family: sans-serif;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+/* Style for headers */
+th {
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+/* Acceptance Criteria: Alternating row colors */
+/* Odd-numbered rows (Row 1 and Row 3 in tbody) */
+tbody tr:nth-child(odd) td {
+  background-color: #ffffff; 
+}
+
+/* Even-numbered rows (Row 2 and Row 4 in tbody) */
+tbody tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
